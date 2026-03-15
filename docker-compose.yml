@@ -1,0 +1,16 @@
+# Optional: Use this for PostgreSQL in production
+# For local dev, SQLite is used by default (no Docker needed)
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: recipe_app
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

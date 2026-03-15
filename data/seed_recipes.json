@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Paneer Butter Masala",
+    "name_hi": "\u092a\u0928\u0940\u0930 \u092c\u091f\u0930 \u092e\u0938\u093e\u0932\u093e",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "medium",
+    "prep_time": 20,
+    "cook_time": 30,
+    "ingredients": [
+      {"name": "Paneer", "name_hi": "\u092a\u0928\u0940\u0930", "quantity": "250", "unit": "g", "is_optional": false},
+      {"name": "Butter", "name_hi": "\u092e\u0916\u094d\u0916\u0928", "quantity": "3", "unit": "tbsp", "is_optional": false},
+      {"name": "Tomatoes", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "4", "unit": "medium", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "2", "unit": "medium", "is_optional": false},
+      {"name": "Cashew nuts", "name_hi": "\u0915\u093e\u091c\u0942", "quantity": "10", "unit": "pieces", "is_optional": false},
+      {"name": "Cream", "name_hi": "\u0915\u094d\u0930\u0940\u092e", "quantity": "3", "unit": "tbsp", "is_optional": true},
+      {"name": "Ginger-garlic paste", "name_hi": "\u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f", "quantity": "1", "unit": "tbsp", "is_optional": false},
+      {"name": "Red chili powder", "name_hi": "\u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a \u092a\u093e\u0909\u0921\u0930", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Garam masala", "name_hi": "\u0917\u0930\u092e \u092e\u0938\u093e\u0932\u093e", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false},
+      {"name": "Kasuri methi", "name_hi": "\u0915\u0938\u0942\u0930\u0940 \u092e\u0947\u0925\u0940", "quantity": "1", "unit": "tsp", "is_optional": true}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Soak cashew nuts in warm water for 15 minutes, then blend into a smooth paste.", "instruction_hi": "\u0915\u093e\u091c\u0942 \u0915\u094b 15 \u092e\u093f\u0928\u091f \u0917\u0930\u092e \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u092d\u093f\u0917\u094b\u0915\u0930 \u092a\u0947\u0938\u094d\u091f \u092c\u0928\u093e \u0932\u0947\u0902\u0964", "duration_mins": 15, "tips": "Use warm water for faster soaking"},
+      {"step_number": 2, "instruction": "Blanch tomatoes, peel and blend into a puree.", "instruction_hi": "\u091f\u092e\u093e\u091f\u0930 \u0915\u094b \u092c\u094d\u0932\u093e\u0902\u091a \u0915\u0930\u0947\u0902, \u091b\u0940\u0932\u0947\u0902 \u0914\u0930 \u092a\u094d\u092f\u0942\u0930\u0940 \u092c\u0928\u093e\u090f\u0902\u0964", "duration_mins": 5, "tips": "Cut a cross on tomatoes before blanching for easy peeling"},
+      {"step_number": 3, "instruction": "Heat butter in a pan. Add chopped onions and saute until golden brown.", "instruction_hi": "\u092a\u0948\u0928 \u092e\u0947\u0902 \u092e\u0916\u094d\u0916\u0928 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u0915\u091f\u0947 \u0939\u0941\u090f \u092a\u094d\u092f\u093e\u091c\u093c \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0917\u094b\u0932\u094d\u0921\u0928 \u092c\u094d\u0930\u093e\u0909\u0928 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 5, "tips": "Use medium flame to avoid burning the butter"},
+      {"step_number": 4, "instruction": "Add ginger-garlic paste and saute for 1 minute until raw smell goes away.", "instruction_hi": "\u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 1 \u092e\u093f\u0928\u091f \u092d\u0942\u0928\u0947\u0902 \u091c\u092c \u0924\u0915 \u0915\u091a\u094d\u091a\u0940 \u092e\u0939\u0915 \u0928 \u091a\u0932\u0940 \u091c\u093e\u090f\u0964", "duration_mins": 1, "tips": null},
+      {"step_number": 5, "instruction": "Add tomato puree, red chili powder, and salt. Cook for 8-10 minutes until oil separates.", "instruction_hi": "\u091f\u092e\u093e\u091f\u0930 \u092a\u094d\u092f\u0942\u0930\u0940, \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a \u092a\u093e\u0909\u0921\u0930 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 8-10 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902 \u091c\u092c \u0924\u0915 \u0924\u0947\u0932 \u0905\u0932\u0917 \u0928 \u0939\u094b \u091c\u093e\u090f\u0964", "duration_mins": 10, "tips": "Stir occasionally to prevent sticking"},
+      {"step_number": 6, "instruction": "Add cashew paste and cook for 3-4 minutes.", "instruction_hi": "\u0915\u093e\u091c\u0942 \u092a\u0947\u0938\u094d\u091f \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 3-4 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 4, "tips": "Add a splash of water if the gravy is too thick"},
+      {"step_number": 7, "instruction": "Add paneer cubes and garam masala. Cook for 3-4 minutes.", "instruction_hi": "\u092a\u0928\u0940\u0930 \u0915\u0947 \u091f\u0941\u0915\u0921\u093c\u0947 \u0914\u0930 \u0917\u0930\u092e \u092e\u0938\u093e\u0932\u093e \u0921\u093e\u0932\u0947\u0902\u0964 3-4 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 4, "tips": "Don't overcook paneer or it becomes rubbery"},
+      {"step_number": 8, "instruction": "Add cream and kasuri methi. Mix well and serve hot with naan or rice.", "instruction_hi": "\u0915\u094d\u0930\u0940\u092e \u0914\u0930 \u0915\u0938\u0942\u0930\u0940 \u092e\u0947\u0925\u0940 \u0921\u093e\u0932\u0947\u0902\u0964 \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u092e\u093f\u0932\u093e\u090f\u0902 \u0914\u0930 \u0928\u093e\u0928 \u092f\u093e \u091a\u093e\u0935\u0932 \u0915\u0947 \u0938\u093e\u0925 \u0917\u0930\u092e\u093e\u0917\u0930\u092e \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 2, "tips": "Crush kasuri methi between palms before adding for more aroma"}
+    ]
+  },
+  {
+    "name": "Dal Tadka",
+    "name_hi": "\u0926\u093e\u0932 \u0924\u0921\u093c\u0915\u093e",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "easy",
+    "prep_time": 10,
+    "cook_time": 25,
+    "ingredients": [
+      {"name": "Toor dal", "name_hi": "\u0905\u0930\u0939\u0930 \u0926\u093e\u0932", "quantity": "1", "unit": "cup", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Ghee", "name_hi": "\u0918\u0940", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Cumin seeds", "name_hi": "\u091c\u0940\u0930\u093e", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Mustard seeds", "name_hi": "\u0930\u093e\u0908", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Dried red chili", "name_hi": "\u0938\u0942\u0916\u0940 \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Green chili", "name_hi": "\u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Coriander leaves", "name_hi": "\u0927\u0928\u093f\u092f\u093e", "quantity": "2", "unit": "tbsp", "is_optional": true},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Wash toor dal and pressure cook with turmeric and 2.5 cups water for 3-4 whistles.", "instruction_hi": "\u0905\u0930\u0939\u0930 \u0926\u093e\u0932 \u0927\u094b\u0915\u0930 \u0939\u0932\u094d\u0926\u0940 \u0914\u0930 2.5 \u0915\u092a \u092a\u093e\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925 3-4 \u0938\u0940\u091f\u0940 \u092a\u094d\u0930\u0947\u0936\u0930 \u0915\u0941\u0915\u0930 \u092e\u0947\u0902 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 15, "tips": "Soak dal for 30 minutes beforehand for faster cooking"},
+      {"step_number": 2, "instruction": "Once cooled, mash the dal well with a whisk.", "instruction_hi": "\u0920\u0902\u0921\u093e \u0939\u094b\u0928\u0947 \u092a\u0930 \u0926\u093e\u0932 \u0915\u094b \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u092e\u0948\u0936 \u0915\u0930\u0947\u0902\u0964", "duration_mins": 2, "tips": null},
+      {"step_number": 3, "instruction": "Heat ghee in a pan. Add cumin seeds, mustard seeds, and dried red chilies. Let them splutter.", "instruction_hi": "\u092a\u0948\u0928 \u092e\u0947\u0902 \u0918\u0940 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u091c\u0940\u0930\u093e, \u0930\u093e\u0908 \u0914\u0930 \u0938\u0942\u0916\u0940 \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964 \u091a\u091f\u0915\u0928\u0947 \u0926\u0947\u0902\u0964", "duration_mins": 1, "tips": "Keep the flame medium to avoid burning the spices"},
+      {"step_number": 4, "instruction": "Add chopped onions and green chilies. Saute until onions turn translucent.", "instruction_hi": "\u0915\u091f\u0947 \u0939\u0941\u090f \u092a\u094d\u092f\u093e\u091c\u093c \u0914\u0930 \u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964 \u092a\u094d\u092f\u093e\u091c\u093c \u092a\u093e\u0930\u0926\u0930\u094d\u0936\u0940 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 5, "instruction": "Add chopped tomatoes and cook until soft.", "instruction_hi": "\u0915\u091f\u0947 \u0939\u0941\u090f \u091f\u092e\u093e\u091f\u0930 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 6, "instruction": "Pour the tadka over the mashed dal. Add salt, mix well, and garnish with coriander leaves.", "instruction_hi": "\u0924\u0921\u093c\u0915\u093e \u0926\u093e\u0932 \u092a\u0930 \u0921\u093e\u0932\u0947\u0902\u0964 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902, \u092e\u093f\u0932\u093e\u090f\u0902 \u0914\u0930 \u0927\u0928\u093f\u092f\u093e \u0938\u0947 \u0938\u091c\u093e\u090f\u0902\u0964", "duration_mins": 1, "tips": "Serve with steamed rice or roti"}
+    ]
+  },
+  {
+    "name": "Chole (Chana Masala)",
+    "name_hi": "\u091b\u094b\u0932\u0947",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "medium",
+    "prep_time": 480,
+    "cook_time": 40,
+    "ingredients": [
+      {"name": "Chickpeas", "name_hi": "\u091b\u094b\u0932\u0947/\u091a\u0928\u0947", "quantity": "1", "unit": "cup", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "2", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "3", "unit": "medium", "is_optional": false},
+      {"name": "Tea bags", "name_hi": "\u091a\u093e\u092f \u0915\u0940 \u092a\u0924\u094d\u0924\u0940", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Chole masala", "name_hi": "\u091b\u094b\u0932\u0947 \u092e\u0938\u093e\u0932\u093e", "quantity": "2", "unit": "tsp", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "3", "unit": "tbsp", "is_optional": false},
+      {"name": "Ginger-garlic paste", "name_hi": "\u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f", "quantity": "1", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Soak chickpeas overnight in water.", "instruction_hi": "\u091b\u094b\u0932\u0947 \u0930\u093e\u0924 \u092d\u0930 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u092d\u093f\u0917\u094b\u090f\u0902\u0964", "duration_mins": 480, "tips": "Add a pinch of baking soda to speed up soaking"},
+      {"step_number": 2, "instruction": "Boil chickpeas with tea bags in a pressure cooker for 5-6 whistles. Discard tea bags.", "instruction_hi": "\u091b\u094b\u0932\u0947 \u0915\u094b \u091a\u093e\u092f \u0915\u0940 \u092a\u0924\u094d\u0924\u0940 \u0915\u0947 \u0938\u093e\u0925 \u092a\u094d\u0930\u0947\u0936\u0930 \u0915\u0941\u0915\u0930 \u092e\u0947\u0902 5-6 \u0938\u0940\u091f\u0940 \u092a\u0915\u093e\u090f\u0902\u0964 \u091a\u093e\u092f \u0915\u0940 \u092a\u0924\u094d\u0924\u0940 \u0928\u093f\u0915\u093e\u0932 \u0926\u0947\u0902\u0964", "duration_mins": 20, "tips": "Tea bags give the dark color to chole"},
+      {"step_number": 3, "instruction": "Heat oil, add chopped onions and saute until golden. Add ginger-garlic paste.", "instruction_hi": "\u0924\u0947\u0932 \u0917\u0930\u092e \u0915\u0930\u0947\u0902, \u092a\u094d\u092f\u093e\u091c\u093c \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0917\u094b\u0932\u094d\u0921\u0928 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964 \u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 7, "tips": null},
+      {"step_number": 4, "instruction": "Add tomato puree, chole masala, and salt. Cook for 5 minutes.", "instruction_hi": "\u091f\u092e\u093e\u091f\u0930 \u092a\u094d\u092f\u0942\u0930\u0940, \u091b\u094b\u0932\u0947 \u092e\u0938\u093e\u0932\u093e \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 5 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 5, "tips": null},
+      {"step_number": 5, "instruction": "Add boiled chickpeas with some water. Simmer for 10-15 minutes.", "instruction_hi": "\u0909\u092c\u0932\u0947 \u0939\u0941\u090f \u091b\u094b\u0932\u0947 \u0925\u094b\u0921\u093c\u0947 \u092a\u093e\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925 \u0921\u093e\u0932\u0947\u0902\u0964 10-15 \u092e\u093f\u0928\u091f \u0927\u0940\u092e\u0940 \u0906\u0902\u091a \u092a\u0930 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 15, "tips": "Mash a few chickpeas to thicken the gravy. Serve with bhature or rice."}
+    ]
+  },
+  {
+    "name": "Aloo Gobi",
+    "name_hi": "\u0906\u0932\u0942 \u0917\u094b\u092d\u0940",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "easy",
+    "prep_time": 10,
+    "cook_time": 25,
+    "ingredients": [
+      {"name": "Potato", "name_hi": "\u0906\u0932\u0942", "quantity": "2", "unit": "medium", "is_optional": false},
+      {"name": "Cauliflower", "name_hi": "\u0917\u094b\u092d\u0940", "quantity": "1", "unit": "small", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Cumin seeds", "name_hi": "\u091c\u0940\u0930\u093e", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "3", "unit": "tbsp", "is_optional": false},
+      {"name": "Green peas", "name_hi": "\u092e\u091f\u0930", "quantity": "0.5", "unit": "cup", "is_optional": true},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Cut potato into cubes and cauliflower into florets. Wash well.", "instruction_hi": "\u0906\u0932\u0942 \u0915\u094b \u091f\u0941\u0915\u0921\u093c\u094b\u0902 \u092e\u0947\u0902 \u0914\u0930 \u0917\u094b\u092d\u0940 \u0915\u094b \u091b\u094b\u091f\u0947 \u091f\u0941\u0915\u0921\u093c\u094b\u0902 \u092e\u0947\u0902 \u0915\u093e\u091f\u0947\u0902\u0964 \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u0927\u094b\u090f\u0902\u0964", "duration_mins": 5, "tips": "Soak cauliflower in salt water for 10 min to remove insects"},
+      {"step_number": 2, "instruction": "Heat oil in a pan. Add cumin seeds and let them splutter.", "instruction_hi": "\u092a\u0948\u0928 \u092e\u0947\u0902 \u0924\u0947\u0932 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u091c\u0940\u0930\u093e \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u091a\u091f\u0915\u0928\u0947 \u0926\u0947\u0902\u0964", "duration_mins": 1, "tips": null},
+      {"step_number": 3, "instruction": "Add onions and saute until soft. Add turmeric and tomatoes.", "instruction_hi": "\u092a\u094d\u092f\u093e\u091c\u093c \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964 \u0939\u0932\u094d\u0926\u0940 \u0914\u0930 \u091f\u092e\u093e\u091f\u0930 \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 4, "tips": null},
+      {"step_number": 4, "instruction": "Add potato and cauliflower. Mix well, cover and cook on low flame for 15-20 minutes.", "instruction_hi": "\u0906\u0932\u0942 \u0914\u0930 \u0917\u094b\u092d\u0940 \u0921\u093e\u0932\u0947\u0902\u0964 \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u092e\u093f\u0932\u093e\u090f\u0902, \u0922\u0915\u0915\u0930 \u0927\u0940\u092e\u0940 \u0906\u0902\u091a \u092a\u0930 15-20 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 20, "tips": "Don't add water - the vegetables will cook in their own steam. Stir occasionally."}
+    ]
+  },
+  {
+    "name": "Jeera Rice",
+    "name_hi": "\u091c\u0940\u0930\u093e \u091a\u093e\u0935\u0932",
+    "cuisine": "North Indian",
+    "region": "All India",
+    "difficulty": "easy",
+    "prep_time": 30,
+    "cook_time": 15,
+    "ingredients": [
+      {"name": "Basmati rice", "name_hi": "\u092c\u093e\u0938\u092e\u0924\u0940 \u091a\u093e\u0935\u0932", "quantity": "1", "unit": "cup", "is_optional": false},
+      {"name": "Cumin seeds", "name_hi": "\u091c\u0940\u0930\u093e", "quantity": "1.5", "unit": "tsp", "is_optional": false},
+      {"name": "Ghee", "name_hi": "\u0918\u0940", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Bay leaf", "name_hi": "\u0924\u0947\u091c \u092a\u0924\u094d\u0924\u093e", "quantity": "1", "unit": "piece", "is_optional": false},
+      {"name": "Water", "name_hi": "\u092a\u093e\u0928\u0940", "quantity": "2", "unit": "cups", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Wash and soak basmati rice for 30 minutes. Drain.", "instruction_hi": "\u092c\u093e\u0938\u092e\u0924\u0940 \u091a\u093e\u0935\u0932 \u0927\u094b\u0915\u0930 30 \u092e\u093f\u0928\u091f \u092d\u093f\u0917\u094b\u090f\u0902\u0964 \u092a\u093e\u0928\u0940 \u0928\u093f\u0915\u093e\u0932 \u0926\u0947\u0902\u0964", "duration_mins": 30, "tips": "Soaking ensures long, fluffy grains"},
+      {"step_number": 2, "instruction": "Heat ghee in a pan. Add bay leaf and cumin seeds. Let cumin splutter.", "instruction_hi": "\u092a\u0948\u0928 \u092e\u0947\u0902 \u0918\u0940 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u0924\u0947\u091c \u092a\u0924\u094d\u0924\u093e \u0914\u0930 \u091c\u0940\u0930\u093e \u0921\u093e\u0932\u0947\u0902\u0964 \u091c\u0940\u0930\u093e \u091a\u091f\u0915\u0928\u0947 \u0926\u0947\u0902\u0964", "duration_mins": 1, "tips": null},
+      {"step_number": 3, "instruction": "Add drained rice and saute gently for 1 minute.", "instruction_hi": "\u091b\u0928\u093e \u0939\u0941\u0906 \u091a\u093e\u0935\u0932 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 1 \u092e\u093f\u0928\u091f \u0939\u0932\u094d\u0915\u0947 \u0938\u0947 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 1, "tips": "Be gentle to avoid breaking the rice grains"},
+      {"step_number": 4, "instruction": "Add water and salt. Bring to boil, then cover and cook on low flame for 12 minutes.", "instruction_hi": "\u092a\u093e\u0928\u0940 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 \u0909\u092c\u093e\u0932 \u0906\u0928\u0947 \u0926\u0947\u0902, \u092b\u093f\u0930 \u0922\u0915\u0915\u0930 \u0927\u0940\u092e\u0940 \u0906\u0902\u091a \u092a\u0930 12 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 12, "tips": "Don't open the lid while cooking. Let it rest for 5 minutes after turning off flame."}
+    ]
+  },
+  {
+    "name": "Masala Dosa",
+    "name_hi": "\u092e\u0938\u093e\u0932\u093e \u0921\u094b\u0938\u093e",
+    "cuisine": "South Indian",
+    "region": "Karnataka",
+    "difficulty": "hard",
+    "prep_time": 480,
+    "cook_time": 30,
+    "ingredients": [
+      {"name": "Rice", "name_hi": "\u091a\u093e\u0935\u0932", "quantity": "2", "unit": "cups", "is_optional": false},
+      {"name": "Urad dal", "name_hi": "\u0909\u0921\u093c\u0926 \u0926\u093e\u0932", "quantity": "0.5", "unit": "cup", "is_optional": false},
+      {"name": "Fenugreek seeds", "name_hi": "\u092e\u0947\u0925\u0940 \u0926\u093e\u0928\u093e", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Potato", "name_hi": "\u0906\u0932\u0942", "quantity": "3", "unit": "medium", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Mustard seeds", "name_hi": "\u0930\u093e\u0908", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Curry leaves", "name_hi": "\u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e", "quantity": "10", "unit": "leaves", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "as needed", "unit": "", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Soak rice and urad dal separately for 6-8 hours. Add fenugreek seeds to dal.", "instruction_hi": "\u091a\u093e\u0935\u0932 \u0914\u0930 \u0909\u0921\u093c\u0926 \u0926\u093e\u0932 \u0905\u0932\u0917-\u0905\u0932\u0917 6-8 \u0918\u0902\u091f\u0947 \u092d\u093f\u0917\u094b\u090f\u0902\u0964 \u0926\u093e\u0932 \u092e\u0947\u0902 \u092e\u0947\u0925\u0940 \u0926\u093e\u0928\u093e \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 480, "tips": null},
+      {"step_number": 2, "instruction": "Grind rice and dal separately into smooth batter. Mix together, add salt, and ferment overnight.", "instruction_hi": "\u091a\u093e\u0935\u0932 \u0914\u0930 \u0926\u093e\u0932 \u0915\u094b \u0905\u0932\u0917-\u0905\u0932\u0917 \u092a\u0940\u0938\u0915\u0930 \u092e\u0941\u0932\u093e\u092f\u092e \u092c\u0948\u091f\u0930 \u092c\u0928\u093e\u090f\u0902\u0964 \u092e\u093f\u0932\u093e\u090f\u0902, \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0930\u093e\u0924 \u092d\u0930 \u092b\u0930\u094d\u092e\u0947\u0902\u091f \u0915\u0930\u0947\u0902\u0964", "duration_mins": 480, "tips": "Batter should be slightly thick, not watery. In cold weather, keep in a warm place for fermentation."},
+      {"step_number": 3, "instruction": "For filling: boil and mash potatoes. Temper mustard seeds, curry leaves, onion, turmeric. Mix with potatoes.", "instruction_hi": "\u092d\u0930\u093e\u0935\u0928 \u0915\u0947 \u0932\u093f\u090f: \u0906\u0932\u0942 \u0909\u092c\u093e\u0932\u0915\u0930 \u092e\u0948\u0936 \u0915\u0930\u0947\u0902\u0964 \u0930\u093e\u0908, \u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e, \u092a\u094d\u092f\u093e\u091c\u093c, \u0939\u0932\u094d\u0926\u0940 \u0915\u093e \u0924\u0921\u093c\u0915\u093e \u0932\u0917\u093e\u090f\u0902\u0964 \u0906\u0932\u0942 \u092e\u0947\u0902 \u092e\u093f\u0932\u093e\u090f\u0902\u0964", "duration_mins": 15, "tips": null},
+      {"step_number": 4, "instruction": "Heat a flat tawa. Pour a ladleful of batter and spread in circular motion to make thin crepe.", "instruction_hi": "\u0938\u092a\u093e\u091f \u0924\u0935\u093e \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u090f\u0915 \u0915\u0921\u094d\u091b\u0940 \u092c\u0948\u091f\u0930 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0917\u094b\u0932 \u0918\u0941\u092e\u093e\u0915\u0930 \u092a\u0924\u0932\u0940 \u0915\u094d\u0930\u0947\u092a \u092c\u0928\u093e\u090f\u0902\u0964", "duration_mins": 2, "tips": "Sprinkle water on hot tawa before spreading batter for crispier dosa"},
+      {"step_number": 5, "instruction": "Drizzle oil around edges. Cook until golden and crispy. Place potato filling, fold and serve with chutney and sambar.", "instruction_hi": "\u0915\u093f\u0928\u093e\u0930\u094b\u0902 \u092a\u0930 \u0924\u0947\u0932 \u0921\u093e\u0932\u0947\u0902\u0964 \u0917\u094b\u0932\u094d\u0921\u0928 \u0914\u0930 \u0915\u0930\u093e\u0930\u093e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964 \u0906\u0932\u0942 \u0915\u093e \u092d\u0930\u093e\u0935\u0928 \u0930\u0916\u0947\u0902, \u092e\u094b\u0921\u093c\u0947\u0902 \u0914\u0930 \u091a\u091f\u0928\u0940 \u0914\u0930 \u0938\u093e\u0902\u092d\u0930 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 3, "tips": "Dosa should be thin and crispy"}
+    ]
+  },
+  {
+    "name": "Rajma",
+    "name_hi": "\u0930\u093e\u091c\u092e\u093e",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "medium",
+    "prep_time": 480,
+    "cook_time": 45,
+    "ingredients": [
+      {"name": "Kidney beans", "name_hi": "\u0930\u093e\u091c\u092e\u093e", "quantity": "1", "unit": "cup", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "2", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "3", "unit": "medium", "is_optional": false},
+      {"name": "Ginger-garlic paste", "name_hi": "\u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f", "quantity": "1", "unit": "tbsp", "is_optional": false},
+      {"name": "Rajma masala", "name_hi": "\u0930\u093e\u091c\u092e\u093e \u092e\u0938\u093e\u0932\u093e", "quantity": "2", "unit": "tsp", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "3", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Soak rajma overnight in plenty of water.", "instruction_hi": "\u0930\u093e\u091c\u092e\u093e \u0915\u094b \u0930\u093e\u0924 \u092d\u0930 \u0922\u0947\u0930 \u0938\u093e\u0930\u0947 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u092d\u093f\u0917\u094b\u090f\u0902\u0964", "duration_mins": 480, "tips": null},
+      {"step_number": 2, "instruction": "Pressure cook rajma with salt for 6-7 whistles until completely soft.", "instruction_hi": "\u0930\u093e\u091c\u092e\u093e \u0915\u094b \u0928\u092e\u0915 \u0915\u0947 \u0938\u093e\u0925 6-7 \u0938\u0940\u091f\u0940 \u092a\u094d\u0930\u0947\u0936\u0930 \u0915\u0941\u0915\u0930 \u092e\u0947\u0902 \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 25, "tips": "Rajma must be fully cooked - undercooked kidney beans can cause stomach issues"},
+      {"step_number": 3, "instruction": "Heat oil, saute onions until golden. Add ginger-garlic paste and cook 1 minute.", "instruction_hi": "\u0924\u0947\u0932 \u0917\u0930\u092e \u0915\u0930\u0947\u0902, \u092a\u094d\u092f\u093e\u091c\u093c \u0917\u094b\u0932\u094d\u0921\u0928 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964 \u0905\u0926\u0930\u0915-\u0932\u0939\u0938\u0941\u0928 \u092a\u0947\u0938\u094d\u091f \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 1 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 7, "tips": null},
+      {"step_number": 4, "instruction": "Add tomato puree and rajma masala. Cook until oil separates.", "instruction_hi": "\u091f\u092e\u093e\u091f\u0930 \u092a\u094d\u092f\u0942\u0930\u0940 \u0914\u0930 \u0930\u093e\u091c\u092e\u093e \u092e\u0938\u093e\u0932\u093e \u0921\u093e\u0932\u0947\u0902\u0964 \u0924\u0947\u0932 \u0905\u0932\u0917 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 8, "tips": null},
+      {"step_number": 5, "instruction": "Add cooked rajma with its water. Simmer for 15 minutes. Mash a few beans for thick gravy. Serve with rice.", "instruction_hi": "\u092a\u0915\u0947 \u0939\u0941\u090f \u0930\u093e\u091c\u092e\u093e \u0909\u0938\u0915\u0947 \u092a\u093e\u0928\u0940 \u0915\u0947 \u0938\u093e\u0925 \u0921\u093e\u0932\u0947\u0902\u0964 15 \u092e\u093f\u0928\u091f \u0927\u0940\u092e\u0940 \u0906\u0902\u091a \u092a\u0930 \u092a\u0915\u093e\u090f\u0902\u0964 \u0917\u093e\u0922\u093c\u0940 \u0917\u094d\u0930\u0947\u0935\u0940 \u0915\u0947 \u0932\u093f\u090f \u0915\u0941\u091b \u0930\u093e\u091c\u092e\u093e \u092e\u0948\u0936 \u0915\u0930\u0947\u0902\u0964 \u091a\u093e\u0935\u0932 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 15, "tips": "Rajma chawal tastes best the next day - the flavors deepen overnight"}
+    ]
+  },
+  {
+    "name": "Poha",
+    "name_hi": "\u092a\u094b\u0939\u093e",
+    "cuisine": "Central Indian",
+    "region": "Maharashtra",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 10,
+    "ingredients": [
+      {"name": "Flattened rice (poha)", "name_hi": "\u092a\u094b\u0939\u093e", "quantity": "2", "unit": "cups", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Green chili", "name_hi": "\u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Mustard seeds", "name_hi": "\u0930\u093e\u0908", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Curry leaves", "name_hi": "\u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e", "quantity": "8", "unit": "leaves", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.25", "unit": "tsp", "is_optional": false},
+      {"name": "Peanuts", "name_hi": "\u092e\u0942\u0902\u0917\u092b\u0932\u0940", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Lemon", "name_hi": "\u0928\u0940\u092c\u0942", "quantity": "1", "unit": "piece", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false},
+      {"name": "Sugar", "name_hi": "\u091a\u0940\u0928\u0940", "quantity": "1", "unit": "tsp", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Rinse poha in water, drain and set aside. Add turmeric and salt.", "instruction_hi": "\u092a\u094b\u0939\u093e \u0915\u094b \u092a\u093e\u0928\u0940 \u0938\u0947 \u0927\u094b\u090f\u0902, \u091b\u093e\u0928\u0947\u0902 \u0914\u0930 \u0905\u0932\u0917 \u0930\u0916\u0947\u0902\u0964 \u0939\u0932\u094d\u0926\u0940 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 3, "tips": "Don't soak poha for too long or it becomes mushy"},
+      {"step_number": 2, "instruction": "Heat oil. Add mustard seeds, curry leaves, and peanuts. Roast peanuts until golden.", "instruction_hi": "\u0924\u0947\u0932 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u0930\u093e\u0908, \u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e \u0914\u0930 \u092e\u0942\u0902\u0917\u092b\u0932\u0940 \u0921\u093e\u0932\u0947\u0902\u0964 \u092e\u0942\u0902\u0917\u092b\u0932\u0940 \u0917\u094b\u0932\u094d\u0921\u0928 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 2, "tips": null},
+      {"step_number": 3, "instruction": "Add chopped onions and green chilies. Saute for 2 minutes.", "instruction_hi": "\u0915\u091f\u0947 \u0939\u0941\u090f \u092a\u094d\u092f\u093e\u091c\u093c \u0914\u0930 \u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964 2 \u092e\u093f\u0928\u091f \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 2, "tips": null},
+      {"step_number": 4, "instruction": "Add the rinsed poha and sugar. Mix gently. Cook for 2-3 minutes. Squeeze lemon juice and serve.", "instruction_hi": "\u0927\u0941\u0932\u093e \u0939\u0941\u0906 \u092a\u094b\u0939\u093e \u0914\u0930 \u091a\u0940\u0928\u0940 \u0921\u093e\u0932\u0947\u0902\u0964 \u0927\u0940\u0930\u0947 \u0938\u0947 \u092e\u093f\u0932\u093e\u090f\u0902\u0964 2-3 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964 \u0928\u0940\u092c\u0942 \u0928\u093f\u091a\u094b\u0921\u093c\u0947\u0902 \u0914\u0930 \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 3, "tips": "Garnish with fresh coriander and sev"}
+    ]
+  },
+  {
+    "name": "Maggi Noodles",
+    "name_hi": "\u092e\u0948\u0917\u0940",
+    "cuisine": "Indo-Chinese",
+    "region": "All India",
+    "difficulty": "easy",
+    "prep_time": 2,
+    "cook_time": 5,
+    "ingredients": [
+      {"name": "Maggi noodles", "name_hi": "\u092e\u0948\u0917\u0940 \u0928\u0942\u0921\u0932\u094d\u0938", "quantity": "1", "unit": "pack", "is_optional": false},
+      {"name": "Water", "name_hi": "\u092a\u093e\u0928\u0940", "quantity": "1.5", "unit": "cups", "is_optional": false},
+      {"name": "Maggi tastemaker", "name_hi": "\u092e\u0948\u0917\u0940 \u091f\u0947\u0938\u094d\u091f\u092e\u0947\u0915\u0930", "quantity": "1", "unit": "sachet", "is_optional": false},
+      {"name": "Vegetables (peas, carrots)", "name_hi": "\u0938\u092c\u094d\u091c\u093c\u093f\u092f\u093e\u0902", "quantity": "0.25", "unit": "cup", "is_optional": true},
+      {"name": "Butter", "name_hi": "\u092e\u0916\u094d\u0916\u0928", "quantity": "1", "unit": "tsp", "is_optional": true}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Boil water in a pan. Add vegetables if using.", "instruction_hi": "\u092a\u0948\u0928 \u092e\u0947\u0902 \u092a\u093e\u0928\u0940 \u0909\u092c\u093e\u0932\u0947\u0902\u0964 \u0905\u0917\u0930 \u0938\u092c\u094d\u091c\u093c\u0940 \u0921\u093e\u0932\u0928\u0940 \u0939\u0948 \u0924\u094b \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 2, "tips": null},
+      {"step_number": 2, "instruction": "Add noodle cake and tastemaker. Break noodles gently with a fork.", "instruction_hi": "\u0928\u0942\u0921\u0932 \u0915\u0947\u0915 \u0914\u0930 \u091f\u0947\u0938\u094d\u091f\u092e\u0947\u0915\u0930 \u0921\u093e\u0932\u0947\u0902\u0964 \u0915\u093e\u0902\u091f\u0947 \u0938\u0947 \u0927\u0940\u0930\u0947 \u0928\u0942\u0921\u0932\u094d\u0938 \u0924\u094b\u0921\u093c\u0947\u0902\u0964", "duration_mins": 1, "tips": "Don't break noodles too much"},
+      {"step_number": 3, "instruction": "Cook for 2-3 minutes, stirring occasionally. Add butter if desired. Serve hot.", "instruction_hi": "2-3 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902, \u092c\u0940\u091a-\u092c\u0940\u091a \u092e\u0947\u0902 \u0939\u093f\u0932\u093e\u090f\u0902\u0964 \u091a\u093e\u0939\u0947\u0902 \u0924\u094b \u092e\u0916\u094d\u0916\u0928 \u0921\u093e\u0932\u0947\u0902\u0964 \u0917\u0930\u092e\u093e\u0917\u0930\u092e \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 3, "tips": "For dry Maggi, use less water (1 cup). For soupy Maggi, use more water."}
+    ]
+  },
+  {
+    "name": "Upma",
+    "name_hi": "\u0909\u092a\u092e\u093e",
+    "cuisine": "South Indian",
+    "region": "Tamil Nadu",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 15,
+    "ingredients": [
+      {"name": "Semolina (rava/sooji)", "name_hi": "\u0938\u0942\u091c\u0940/\u0930\u0935\u093e", "quantity": "1", "unit": "cup", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Green chili", "name_hi": "\u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Mustard seeds", "name_hi": "\u0930\u093e\u0908", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Urad dal", "name_hi": "\u0909\u0921\u093c\u0926 \u0926\u093e\u0932", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Curry leaves", "name_hi": "\u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e", "quantity": "8", "unit": "leaves", "is_optional": false},
+      {"name": "Cashew nuts", "name_hi": "\u0915\u093e\u091c\u0942", "quantity": "8", "unit": "pieces", "is_optional": true},
+      {"name": "Water", "name_hi": "\u092a\u093e\u0928\u0940", "quantity": "2.5", "unit": "cups", "is_optional": false},
+      {"name": "Oil/Ghee", "name_hi": "\u0924\u0947\u0932/\u0918\u0940", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false},
+      {"name": "Lemon", "name_hi": "\u0928\u0940\u092c\u0942", "quantity": "0.5", "unit": "piece", "is_optional": true}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Dry roast semolina on medium flame until light golden and aromatic. Set aside.", "instruction_hi": "\u0938\u0942\u091c\u0940 \u0915\u094b \u092e\u0927\u094d\u092f\u092e \u0906\u0902\u091a \u092a\u0930 \u0939\u0932\u094d\u0915\u093e \u0917\u094b\u0932\u094d\u0921\u0928 \u0914\u0930 \u0938\u0941\u0917\u0902\u0927\u093f\u0924 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964 \u0905\u0932\u0917 \u0930\u0916\u0947\u0902\u0964", "duration_mins": 3, "tips": "Keep stirring to avoid burning"},
+      {"step_number": 2, "instruction": "Heat oil/ghee. Add mustard seeds, urad dal, cashews, curry leaves, and green chilies.", "instruction_hi": "\u0924\u0947\u0932/\u0918\u0940 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u0930\u093e\u0908, \u0909\u0921\u093c\u0926 \u0926\u093e\u0932, \u0915\u093e\u091c\u0942, \u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e \u0914\u0930 \u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964", "duration_mins": 1, "tips": null},
+      {"step_number": 3, "instruction": "Add chopped onions and saute until translucent.", "instruction_hi": "\u0915\u091f\u0947 \u0939\u0941\u090f \u092a\u094d\u092f\u093e\u091c\u093c \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u092a\u093e\u0930\u0926\u0930\u094d\u0936\u0940 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 4, "instruction": "Add water and salt. Bring to a rolling boil.", "instruction_hi": "\u092a\u093e\u0928\u0940 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u0909\u092c\u093e\u0932\u0947\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 5, "instruction": "Reduce flame to low. Slowly add roasted semolina while stirring continuously to avoid lumps. Cover and cook for 3-4 minutes.", "instruction_hi": "\u0906\u0902\u091a \u0927\u0940\u092e\u0940 \u0915\u0930\u0947\u0902\u0964 \u0932\u0917\u093e\u0924\u093e\u0930 \u0939\u093f\u0932\u093e\u0924\u0947 \u0939\u0941\u090f \u0927\u0940\u0930\u0947-\u0927\u0940\u0930\u0947 \u092d\u0941\u0928\u0940 \u0939\u0941\u0908 \u0938\u0942\u091c\u0940 \u0921\u093e\u0932\u0947\u0902 \u0924\u093e\u0915\u093f \u0917\u093e\u0902\u0920 \u0928 \u092c\u0928\u0947\u0902\u0964 \u0922\u0915\u0915\u0930 3-4 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 4, "tips": "Add lemon juice before serving for extra flavor"}
+    ]
+  },
+  {
+    "name": "Palak Paneer",
+    "name_hi": "\u092a\u093e\u0932\u0915 \u092a\u0928\u0940\u0930",
+    "cuisine": "North Indian",
+    "region": "Punjab",
+    "difficulty": "medium",
+    "prep_time": 15,
+    "cook_time": 25,
+    "ingredients": [
+      {"name": "Spinach", "name_hi": "\u092a\u093e\u0932\u0915", "quantity": "500", "unit": "g", "is_optional": false},
+      {"name": "Paneer", "name_hi": "\u092a\u0928\u0940\u0930", "quantity": "200", "unit": "g", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Green chili", "name_hi": "\u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Garlic", "name_hi": "\u0932\u0939\u0938\u0941\u0928", "quantity": "4", "unit": "cloves", "is_optional": false},
+      {"name": "Cumin seeds", "name_hi": "\u091c\u0940\u0930\u093e", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Cream", "name_hi": "\u0915\u094d\u0930\u0940\u092e", "quantity": "2", "unit": "tbsp", "is_optional": true},
+      {"name": "Butter", "name_hi": "\u092e\u0916\u094d\u0916\u0928", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Blanch spinach in boiling water for 2 minutes. Transfer to ice water immediately. Blend into smooth puree.", "instruction_hi": "\u092a\u093e\u0932\u0915 \u0915\u094b \u0909\u092c\u0932\u0924\u0947 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 2 \u092e\u093f\u0928\u091f \u092c\u094d\u0932\u093e\u0902\u091a \u0915\u0930\u0947\u0902\u0964 \u0924\u0941\u0930\u0902\u0924 \u092c\u0930\u094d\u092b \u0915\u0947 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u0921\u093e\u0932\u0947\u0902\u0964 \u092a\u0940\u0938\u0915\u0930 \u092e\u0941\u0932\u093e\u092f\u092e \u092a\u094d\u092f\u0942\u0930\u0940 \u092c\u0928\u093e\u090f\u0902\u0964", "duration_mins": 5, "tips": "Ice bath keeps spinach bright green"},
+      {"step_number": 2, "instruction": "Heat butter. Add cumin seeds, then chopped onion, garlic, green chili. Saute until golden.", "instruction_hi": "\u092e\u0916\u094d\u0916\u0928 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u091c\u0940\u0930\u093e, \u092b\u093f\u0930 \u0915\u091f\u093e \u092a\u094d\u092f\u093e\u091c\u093c, \u0932\u0939\u0938\u0941\u0928, \u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964 \u0917\u094b\u0932\u094d\u0921\u0928 \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 5, "tips": null},
+      {"step_number": 3, "instruction": "Add chopped tomato and cook until soft.", "instruction_hi": "\u0915\u091f\u093e \u091f\u092e\u093e\u091f\u0930 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 4, "instruction": "Add spinach puree and salt. Cook for 5-7 minutes.", "instruction_hi": "\u092a\u093e\u0932\u0915 \u092a\u094d\u092f\u0942\u0930\u0940 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 5-7 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 7, "tips": "Don't overcook or spinach loses its color"},
+      {"step_number": 5, "instruction": "Add paneer cubes and cream. Cook for 3-4 minutes. Serve with roti or naan.", "instruction_hi": "\u092a\u0928\u0940\u0930 \u0915\u0947 \u091f\u0941\u0915\u0921\u093c\u0947 \u0914\u0930 \u0915\u094d\u0930\u0940\u092e \u0921\u093e\u0932\u0947\u0902\u0964 3-4 \u092e\u093f\u0928\u091f \u092a\u0915\u093e\u090f\u0902\u0964 \u0930\u094b\u091f\u0940 \u092f\u093e \u0928\u093e\u0928 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 4, "tips": "Soak paneer in warm water for 10 min before adding for softer texture"}
+    ]
+  },
+  {
+    "name": "Egg Bhurji",
+    "name_hi": "\u0905\u0902\u0921\u093e \u092d\u0941\u0930\u094d\u091c\u0940",
+    "cuisine": "North Indian",
+    "region": "All India",
+    "difficulty": "easy",
+    "prep_time": 5,
+    "cook_time": 8,
+    "ingredients": [
+      {"name": "Eggs", "name_hi": "\u0905\u0902\u0921\u0947", "quantity": "4", "unit": "pieces", "is_optional": false},
+      {"name": "Onion", "name_hi": "\u092a\u094d\u092f\u093e\u091c\u093c", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Tomato", "name_hi": "\u091f\u092e\u093e\u091f\u0930", "quantity": "1", "unit": "medium", "is_optional": false},
+      {"name": "Green chili", "name_hi": "\u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.25", "unit": "tsp", "is_optional": false},
+      {"name": "Red chili powder", "name_hi": "\u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a \u092a\u093e\u0909\u0921\u0930", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Oil/Butter", "name_hi": "\u0924\u0947\u0932/\u092e\u0916\u094d\u0916\u0928", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Coriander leaves", "name_hi": "\u0927\u0928\u093f\u092f\u093e", "quantity": "2", "unit": "tbsp", "is_optional": true},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Heat oil/butter. Add chopped onions and green chilies. Saute until soft.", "instruction_hi": "\u0924\u0947\u0932/\u092e\u0916\u094d\u0916\u0928 \u0917\u0930\u092e \u0915\u0930\u0947\u0902\u0964 \u0915\u091f\u0947 \u0939\u0941\u090f \u092a\u094d\u092f\u093e\u091c\u093c \u0914\u0930 \u0939\u0930\u0940 \u092e\u093f\u0930\u094d\u091a \u0921\u093e\u0932\u0947\u0902\u0964 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092d\u0942\u0928\u0947\u0902\u0964", "duration_mins": 3, "tips": null},
+      {"step_number": 2, "instruction": "Add chopped tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes are soft.", "instruction_hi": "\u0915\u091f\u0947 \u0939\u0941\u090f \u091f\u092e\u093e\u091f\u0930, \u0939\u0932\u094d\u0926\u0940, \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a \u092a\u093e\u0909\u0921\u0930 \u0914\u0930 \u0928\u092e\u0915 \u0921\u093e\u0932\u0947\u0902\u0964 \u091f\u092e\u093e\u091f\u0930 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 2, "tips": null},
+      {"step_number": 3, "instruction": "Break eggs directly into the pan. Scramble quickly with a spatula until eggs are cooked but still moist.", "instruction_hi": "\u0905\u0902\u0921\u0947 \u0938\u0940\u0927\u0947 \u092a\u0948\u0928 \u092e\u0947\u0902 \u0924\u094b\u0921\u093c\u0947\u0902\u0964 \u0938\u094d\u092a\u0948\u091a\u0941\u0932\u093e \u0938\u0947 \u091c\u0932\u094d\u0926\u0940 \u0938\u0947 \u092d\u0942\u0928\u0947\u0902 \u091c\u092c \u0924\u0915 \u0905\u0902\u0921\u0947 \u092a\u0915 \u091c\u093e\u090f\u0902 \u0932\u0947\u0915\u093f\u0928 \u0928\u092e \u0930\u0939\u0947\u0902\u0964", "duration_mins": 3, "tips": "Don't overcook - eggs should be slightly moist. Garnish with coriander and serve with pav or roti."}
+    ]
+  },
+  {
+    "name": "Sambar",
+    "name_hi": "\u0938\u093e\u0902\u092d\u0930",
+    "cuisine": "South Indian",
+    "region": "Tamil Nadu",
+    "difficulty": "medium",
+    "prep_time": 15,
+    "cook_time": 30,
+    "ingredients": [
+      {"name": "Toor dal", "name_hi": "\u0905\u0930\u0939\u0930 \u0926\u093e\u0932", "quantity": "0.75", "unit": "cup", "is_optional": false},
+      {"name": "Mixed vegetables (drumstick, carrot, brinjal)", "name_hi": "\u092e\u093f\u0915\u094d\u0938 \u0938\u092c\u094d\u091c\u093c\u0940 (\u0938\u0939\u091c\u0928, \u0917\u093e\u091c\u0930, \u092c\u0948\u0902\u0917\u0928)", "quantity": "1.5", "unit": "cups", "is_optional": false},
+      {"name": "Sambar powder", "name_hi": "\u0938\u093e\u0902\u092d\u0930 \u092a\u093e\u0909\u0921\u0930", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Tamarind", "name_hi": "\u0907\u092e\u0932\u0940", "quantity": "1", "unit": "tbsp", "is_optional": false},
+      {"name": "Mustard seeds", "name_hi": "\u0930\u093e\u0908", "quantity": "1", "unit": "tsp", "is_optional": false},
+      {"name": "Curry leaves", "name_hi": "\u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e", "quantity": "10", "unit": "leaves", "is_optional": false},
+      {"name": "Dried red chili", "name_hi": "\u0938\u0942\u0916\u0940 \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a", "quantity": "2", "unit": "pieces", "is_optional": false},
+      {"name": "Turmeric", "name_hi": "\u0939\u0932\u094d\u0926\u0940", "quantity": "0.5", "unit": "tsp", "is_optional": false},
+      {"name": "Asafoetida", "name_hi": "\u0939\u0940\u0902\u0917", "quantity": "a pinch", "unit": "", "is_optional": false},
+      {"name": "Oil", "name_hi": "\u0924\u0947\u0932", "quantity": "2", "unit": "tbsp", "is_optional": false},
+      {"name": "Salt", "name_hi": "\u0928\u092e\u0915", "quantity": "to taste", "unit": "", "is_optional": false}
+    ],
+    "steps": [
+      {"step_number": 1, "instruction": "Pressure cook toor dal with turmeric for 3-4 whistles. Mash well.", "instruction_hi": "\u0905\u0930\u0939\u0930 \u0926\u093e\u0932 \u0915\u094b \u0939\u0932\u094d\u0926\u0940 \u0915\u0947 \u0938\u093e\u0925 3-4 \u0938\u0940\u091f\u0940 \u092a\u094d\u0930\u0947\u0936\u0930 \u0915\u0941\u0915\u0930 \u092e\u0947\u0902 \u092a\u0915\u093e\u090f\u0902\u0964 \u0905\u091a\u094d\u091b\u0940 \u0924\u0930\u0939 \u092e\u0948\u0936 \u0915\u0930\u0947\u0902\u0964", "duration_mins": 15, "tips": null},
+      {"step_number": 2, "instruction": "Soak tamarind in warm water for 10 minutes. Extract juice and discard pulp.", "instruction_hi": "\u0907\u092e\u0932\u0940 \u0915\u094b 10 \u092e\u093f\u0928\u091f \u0917\u0930\u092e \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u092d\u093f\u0917\u094b\u090f\u0902\u0964 \u0930\u0938 \u0928\u093f\u0915\u093e\u0932\u0947\u0902 \u0914\u0930 \u0917\u0942\u0926\u093e \u092b\u0947\u0902\u0915 \u0926\u0947\u0902\u0964", "duration_mins": 10, "tips": "You can use tamarind paste instead - 1 tsp dissolved in water"},
+      {"step_number": 3, "instruction": "Cook vegetables in water with salt until tender.", "instruction_hi": "\u0938\u092c\u094d\u091c\u093c\u093f\u092f\u094b\u0902 \u0915\u094b \u0928\u092e\u0915 \u0914\u0930 \u092a\u093e\u0928\u0940 \u092e\u0947\u0902 \u0928\u0930\u092e \u0939\u094b\u0928\u0947 \u0924\u0915 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 10, "tips": null},
+      {"step_number": 4, "instruction": "Add mashed dal, tamarind juice, and sambar powder to the vegetables. Simmer for 10 minutes.", "instruction_hi": "\u092e\u0948\u0936 \u0915\u0940 \u0939\u0941\u0908 \u0926\u093e\u0932, \u0907\u092e\u0932\u0940 \u0915\u093e \u0930\u0938 \u0914\u0930 \u0938\u093e\u0902\u092d\u0930 \u092a\u093e\u0909\u0921\u0930 \u0938\u092c\u094d\u091c\u093c\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u0921\u093e\u0932\u0947\u0902\u0964 10 \u092e\u093f\u0928\u091f \u0927\u0940\u092e\u0940 \u0906\u0902\u091a \u092a\u0930 \u092a\u0915\u093e\u090f\u0902\u0964", "duration_mins": 10, "tips": null},
+      {"step_number": 5, "instruction": "Prepare tadka: heat oil, add mustard seeds, dried red chili, curry leaves, and asafoetida. Pour over sambar and serve with rice or idli.", "instruction_hi": "\u0924\u0921\u093c\u0915\u093e \u092c\u0928\u093e\u090f\u0902: \u0924\u0947\u0932 \u0917\u0930\u092e \u0915\u0930\u0947\u0902, \u0930\u093e\u0908, \u0938\u0942\u0916\u0940 \u0932\u093e\u0932 \u092e\u093f\u0930\u094d\u091a, \u0915\u0930\u0940 \u092a\u0924\u094d\u0924\u093e \u0914\u0930 \u0939\u0940\u0902\u0917 \u0921\u093e\u0932\u0947\u0902\u0964 \u0938\u093e\u0902\u092d\u0930 \u092a\u0930 \u0921\u093e\u0932\u0947\u0902 \u0914\u0930 \u091a\u093e\u0935\u0932 \u092f\u093e \u0907\u0921\u0932\u0940 \u0915\u0947 \u0938\u093e\u0925 \u092a\u0930\u094b\u0938\u0947\u0902\u0964", "duration_mins": 2, "tips": "Sambar tastes better the next day"}
+    ]
+  }
+]
