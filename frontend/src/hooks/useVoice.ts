@@ -60,8 +60,10 @@ export function useVoice(options: UseVoiceOptions = {}): UseVoiceReturn {
       cleanupWs();
       reconnectParamsRef.current = { recipeId, language };
 
-      const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-      const wsUrl = `${protocol}//${window.location.host}/api/voice/stream`;
+      const isProd = import.meta.env.PROD;
+      const protocol = isProd ? "wss:" : (window.location.protocol === "https:" ? "wss:" : "ws:");
+      const host = isProd ? "rasoi-api.skdev.one" : window.location.host;
+      const wsUrl = `${protocol}//${host}/api/voice/stream`;
       const ws = new WebSocket(wsUrl);
 
       ws.onopen = () => {

@@ -1,7 +1,11 @@
 import axios from "axios";
 
+const API_BASE = import.meta.env.PROD
+  ? "https://rasoi-api.skdev.one/api"
+  : "/api";
+
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: API_BASE,
 });
 
 export interface Recipe {
