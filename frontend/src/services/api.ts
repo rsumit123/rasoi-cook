@@ -95,6 +95,26 @@ export async function identifyIngredient(imageFile: File): Promise<VisionResult>
   return data;
 }
 
+export interface VisualAskResponse {
+  reply: string;
+  image_description: string;
+}
+
+export async function askAboutPhoto(
+  imageFile: File,
+  question: string,
+  sessionId: number,
+  language: string = "hi",
+): Promise<VisualAskResponse> {
+  const formData = new FormData();
+  formData.append("file", imageFile);
+  formData.append("question", question);
+  formData.append("session_id", String(sessionId));
+  formData.append("language", language);
+  const { data } = await api.post("/vision/ask", formData);
+  return data;
+}
+
 export interface VoiceResponse {
   transcript: string;
   language: string;

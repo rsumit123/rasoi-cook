@@ -9,7 +9,6 @@ import {
 } from "../services/api";
 import VoiceButton from "../components/VoiceButton.tsx";
 import CameraCapture from "../components/CameraCapture.tsx";
-import type { VisionResult } from "../services/api";
 
 const LANGUAGES = [
   { code: "hi", label: "Hindi" },
@@ -354,15 +353,19 @@ export default function CookingSession() {
         />
 
         <CameraCapture
-          onIngredientIdentified={(result: VisionResult) => {
-            const hi = result.ingredient_hi ? ` (${result.ingredient_hi})` : "";
-            const recipes = result.matching_recipes.length > 0
-              ? ` Recipes: ${result.matching_recipes.map((r) => r.name).join(", ")}.`
-              : "";
-            setMessages((prev) => [
-              ...prev,
-              { role: "assistant", content: `Identified: ${result.ingredient}${hi} (${Math.round(result.confidence * 100)}%).${recipes}` },
-            ]);
+          sessionId={sessionId}
+          language={language}
+          onPhotoSent={(question) => {
+            setVoiceProcessing(true);
+            setMessages((prev) => [...prev, { role: "user", content: `[Photo] ${question}` }]);
+          }}
+          onReply={(reply) => {
+            setVoiceProcessing(false);
+            setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+          }}
+          onError={(err) => {
+            setVoiceProcessing(false);
+            setMessages((prev) => [...prev, { role: "assistant", content: err }]);
           }}
         />
 
