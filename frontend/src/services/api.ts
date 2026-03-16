@@ -130,4 +130,15 @@ export async function sendVoice(sessionId: number, audioBlob: Blob, language: st
   return data;
 }
 
+export interface Voice {
+  id: string;
+  name: string;
+  gender: string;
+}
+
+export async function getVoices(): Promise<Voice[]> {
+  const { data } = await api.get("/voice/voices");
+  return data;
+}
+
 export default api;

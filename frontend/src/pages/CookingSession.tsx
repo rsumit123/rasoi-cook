@@ -4,8 +4,10 @@ import {
   getRecipe,
   createSession,
   sendMessage,
+  getVoices,
   type RecipeDetail,
   type ChatMessage,
+  type Voice,
 } from "../services/api";
 import VoiceButton from "../components/VoiceButton.tsx";
 import CameraCapture from "../components/CameraCapture.tsx";
@@ -34,7 +36,13 @@ export default function CookingSession() {
   const [currentStep, setCurrentStep] = useState(1);
   const [showRecipe, setShowRecipe] = useState(true);
   const [language, setLanguage] = useState("hi");
+  const [voices, setVoices] = useState<Voice[]>([]);
+  const [selectedVoice, setSelectedVoice] = useState("ritu");
   const chatEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    getVoices().then(setVoices).catch(() => {});
+  }, []);
 
   const isThinking = loading || voiceProcessing;
 
@@ -333,6 +341,30 @@ export default function CookingSession() {
             <option key={l.code} value={l.code}>{l.label}</option>
           ))}
         </select>
+
+        {voices.length > 0 && (
+          <select
+            value={selectedVoice}
+            onChange={(e) => setSelectedVoice(e.target.value)}
+            style={{
+              padding: "0.35rem 0.3rem",
+              borderRadius: "6px",
+              border: "1px solid #ddd",
+              fontSize: "0.72rem",
+              fontWeight: 600,
+              color: "#666",
+              background: "#f9f9f9",
+              cursor: "pointer",
+              flexShrink: 0,
+              outline: "none",
+            }}
+            title="Voice"
+          >
+            {voices.map((v) => (
+              <option key={v.id} value={v.id}>{v.name} ({v.gender === "female" ? "F" : "M"})</option>
+            ))}
+          </select>
+        )}
 
         <input
           type="text"

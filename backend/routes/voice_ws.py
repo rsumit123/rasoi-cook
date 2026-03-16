@@ -27,6 +27,13 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/voice", tags=["voice"])
 
 
+@router.get("/voices")
+async def list_voices():
+    """List available TTS voices."""
+    from backend.modules.voice.language import AVAILABLE_VOICES
+    return AVAILABLE_VOICES
+
+
 @router.post("/transcribe")
 async def voice_transcribe(
     file: UploadFile = File(...),
