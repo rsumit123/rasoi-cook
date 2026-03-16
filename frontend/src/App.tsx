@@ -3,15 +3,16 @@ import Home from "./pages/Home";
 import RecipeList from "./pages/RecipeList";
 import RecipeDetail from "./pages/RecipeDetail";
 import CookingSession from "./pages/CookingSession";
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <nav style={{ padding: "0.8rem 1rem", borderBottom: "1px solid #eee" }}>
-        <Link to="/" style={{ marginRight: "1rem", textDecoration: "none", fontWeight: "bold" }}>
-          Home
+      <nav className="nav">
+        <Link to="/" className="nav-brand">
+          Rasoi
         </Link>
-        <Link to="/recipes" style={{ textDecoration: "none" }}>
+        <Link to="/recipes" className="nav-link">
           Recipes
         </Link>
       </nav>

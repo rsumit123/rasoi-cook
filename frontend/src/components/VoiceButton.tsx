@@ -1,29 +1,27 @@
-import { useEffect, type CSSProperties } from "react";
+import { type CSSProperties } from "react";
 import { useVoice } from "../hooks/useVoice.ts";
 
 interface VoiceButtonProps {
-  recipeId: number;
+  sessionId: number | null;
   language?: string;
+  compact?: boolean;
   onTranscript?: (text: string) => void;
   onResponse?: (text: string) => void;
+  onError?: (error: string) => void;
 }
 
 export default function VoiceButton({
-  recipeId,
-  language = "en",
+  sessionId,
+  language = "hi",
+  compact = false,
   onTranscript,
   onResponse,
+  onError,
 }: VoiceButtonProps) {
-  const voice = useVoice({ onTranscript, onResponse });
-
-  useEffect(() => {
-    voice.connect(recipeId, language);
-    return () => voice.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [recipeId, language]);
+  const voice = useVoice({ sessionId, language, onTranscript, onResponse, onError });
 
   const handlePointerDown = () => {
-    if (!voice.isConnected || voice.isProcessing) return;
+    if (voice.isProcessing) return;
     voice.startRecording();
   };
 
@@ -33,54 +31,61 @@ export default function VoiceButton({
     }
   };
 
-  // Determine visual state
+  const size = compact ? 40 : 56;
   let btnStyle: CSSProperties;
   let label: string;
 
   if (voice.isRecording) {
-    btnStyle = { ...baseBtn, ...recordingBtn };
-    label = "Recording...";
+    btnStyle = { ...baseBtn, ...recordingBtn, width: size, height: size };
+    label = "Release to send...";
   } else if (voice.isProcessing) {
-    btnStyle = { ...baseBtn, ...processingBtn };
+    btnStyle = { ...baseBtn, ...processingBtn, width: size, height: size };
     label = "Processing...";
-  } else if (!voice.isConnected) {
-    btnStyle = { ...baseBtn, ...disabledBtn };
-    label = "Connecting...";
   } else {
-    btnStyle = { ...baseBtn, ...idleBtn };
+    btnStyle = { ...baseBtn, ...idleBtn, width: size, height: size };
     label = "Hold to speak";
   }
 
-  return (
-    <div style={wrapper}>
+  if (compact) {
+    return (
       <button
         onPointerDown={handlePointerDown}
         onPointerUp={handlePointerUp}
         onPointerLeave={handlePointerUp}
-        disabled={!voice.isConnected || voice.isProcessing}
+        disabled={voice.isProcessing || !sessionId}
         style={btnStyle}
         aria-label={label}
+        title={label}
       >
-        <span style={iconStyle}>
+        <span style={{ fontSize: "1rem" }}>
           {voice.isRecording ? "\u{1F534}" : voice.isProcessing ? "\u23F3" : "\u{1F3A4}"}
         </span>
       </button>
-      <span style={labelStyle}>{label}</span>
+    );
+  }
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.25rem" }}>
+      <button
+        onPointerDown={handlePointerDown}
+        onPointerUp={handlePointerUp}
+        onPointerLeave={handlePointerUp}
+        disabled={voice.isProcessing || !sessionId}
+        style={btnStyle}
+        aria-label={label}
+      >
+        <span style={{ fontSize: "1.5rem" }}>
+          {voice.isRecording ? "\u{1F534}" : voice.isProcessing ? "\u23F3" : "\u{1F3A4}"}
+        </span>
+      </button>
+      <span style={{ fontSize: "0.7rem", color: voice.isRecording ? "#dc2626" : "#888", fontWeight: voice.isRecording ? 600 : 400 }}>
+        {label}
+      </span>
     </div>
   );
 }
 
-const wrapper: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  gap: "0.3rem",
-  padding: "0.3rem 0",
-};
-
 const baseBtn: CSSProperties = {
-  width: "52px",
-  height: "52px",
   borderRadius: "50%",
   border: "none",
   cursor: "pointer",
@@ -88,35 +93,21 @@ const baseBtn: CSSProperties = {
   alignItems: "center",
   justifyContent: "center",
   transition: "transform 0.15s, box-shadow 0.15s",
+  flexShrink: 0,
 };
 
 const idleBtn: CSSProperties = {
   background: "#e85d04",
-  boxShadow: "0 2px 8px rgba(232, 93, 4, 0.3)",
+  boxShadow: "0 4px 14px rgba(232, 93, 4, 0.35)",
 };
 
 const recordingBtn: CSSProperties = {
   background: "#dc2626",
-  boxShadow: "0 0 0 4px rgba(220, 38, 38, 0.3)",
-  transform: "scale(1.1)",
-  animation: "pulse 1s infinite",
+  boxShadow: "0 0 0 6px rgba(220, 38, 38, 0.25)",
+  transform: "scale(1.15)",
 };
 
 const processingBtn: CSSProperties = {
   background: "#9ca3af",
   cursor: "wait",
-};
-
-const disabledBtn: CSSProperties = {
-  background: "#d1d5db",
-  cursor: "not-allowed",
-};
-
-const iconStyle: CSSProperties = {
-  fontSize: "1.3rem",
-};
-
-const labelStyle: CSSProperties = {
-  fontSize: "0.7rem",
-  color: "#888",
 };

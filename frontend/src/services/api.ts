@@ -95,4 +95,19 @@ export async function identifyIngredient(imageFile: File): Promise<VisionResult>
   return data;
 }
 
+export interface VoiceResponse {
+  transcript: string;
+  language: string;
+  reply: string;
+}
+
+export async function sendVoice(sessionId: number, audioBlob: Blob, language: string = "hi"): Promise<VoiceResponse> {
+  const formData = new FormData();
+  formData.append("file", audioBlob, "audio.webm");
+  formData.append("session_id", String(sessionId));
+  formData.append("language", language);
+  const { data } = await api.post("/voice/transcribe", formData);
+  return data;
+}
+
 export default api;

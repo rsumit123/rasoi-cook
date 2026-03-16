@@ -38,7 +38,7 @@ async def chat(
         system_content += f"\n\n{recipe_context}"
 
     if language and language != "en":
-        system_content += f"\n\nThe user prefers communicating in language code: {language}. Respond in that language when appropriate."
+        system_content += f"\n\nIMPORTANT: The user prefers Hindi/Hinglish. Always respond in Hinglish (Hindi written in Roman script mixed with English cooking terms). Language code: {language}."
 
     # Build messages array
     messages = [{"role": "system", "content": system_content}]

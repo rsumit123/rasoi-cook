@@ -1,14 +1,15 @@
-"""WebSocket endpoint for voice streaming."""
+"""Voice endpoints — REST transcribe + WebSocket streaming."""
 
 import asyncio
 import base64
 import logging
 
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect
+from fastapi import APIRouter, Depends, File, Form, UploadFile, WebSocket, WebSocketDisconnect
 from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
-from backend.db import async_session
+from backend.db import async_session, get_db
 from backend.models.recipe import Recipe
 from backend.models.session import CookingSession
 from backend.modules.conversation.context import (
@@ -16,7 +17,7 @@ from backend.modules.conversation.context import (
     get_conversation_history,
     get_or_create_session,
 )
-from backend.modules.conversation.engine import chat
+from backend.modules.conversation.engine import chat, _clean_think_tags
 from backend.modules.voice.language import get_tts_config
 from backend.modules.voice.stt import transcribe
 from backend.modules.voice.tts import synthesize
@@ -24,6 +25,113 @@ from backend.modules.voice.tts import synthesize
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/voice", tags=["voice"])
+
+
+@router.post("/transcribe")
+async def voice_transcribe(
+    file: UploadFile = File(...),
+    session_id: int = Form(...),
+    language: str = Form("hi"),
+    db: AsyncSession = Depends(get_db),
+):
+    """Accept audio file, transcribe, get LLM response, return all."""
+    audio_bytes = await file.read()
+    if not audio_bytes:
+        return {"error": "Empty audio file"}
+
+    # Normalize language for STT
+    stt_language = language
+    if stt_language and "-" not in stt_language:
+        stt_language = f"{stt_language}-IN"
+
+    # 1. Speech-to-text
+    try:
+        stt_result = await asyncio.to_thread(
+            _rest_transcribe, audio_bytes, stt_language, file.filename or "audio.webm"
+        )
+        transcript = stt_result["transcript"]
+        detected_language = stt_result.get("language_code", stt_language)
+    except Exception as e:
+        logger.exception("STT failed")
+        return {"error": f"Speech recognition failed: {str(e)}", "transcript": "", "reply": ""}
+
+    # 2. Load recipe + conversation context
+    result = await db.execute(
+        select(CookingSession).where(CookingSession.id == session_id)
+    )
+    session = result.scalar_one_or_none()
+
+    recipe_data = None
+    if session and session.recipe_id:
+        recipe_data = await _load_recipe_data(db, session.recipe_id)
+
+    history = await get_conversation_history(db, session_id)
+    await add_message(db, session_id, "user", transcript)
+
+    # 3. LLM response
+    try:
+        from backend.modules.conversation.engine import get_client as get_llm_client
+        from backend.modules.conversation.prompts import SYSTEM_PROMPT, build_recipe_context
+        from backend.config import settings
+
+        reply = await asyncio.to_thread(
+            _rest_chat, transcript, history, recipe_data, language
+        )
+    except Exception as e:
+        logger.exception("LLM failed")
+        reply = "Sorry, I couldn't process that. Please try again."
+
+    await add_message(db, session_id, "assistant", reply)
+    await db.commit()
+
+    return {
+        "transcript": transcript,
+        "language": detected_language,
+        "reply": reply,
+    }
+
+
+def _rest_transcribe(audio_bytes: bytes, language_code: str, filename: str) -> dict:
+    """Synchronous STT call for REST endpoint."""
+    import io
+    from backend.modules.voice.stt import get_client
+    from backend.config import settings
+
+    client = get_client()
+    audio_file = io.BytesIO(audio_bytes)
+    audio_file.name = filename
+
+    response = client.speech_to_text.transcribe(
+        file=audio_file,
+        model=settings.SARVAM_STT_MODEL,
+        mode="transcribe",
+        language_code=language_code,
+    )
+    return {
+        "transcript": response.transcript,
+        "language_code": response.language_code,
+    }
+
+
+def _rest_chat(user_message: str, history: list[dict], recipe_data: dict | None, language: str) -> str:
+    """Synchronous LLM call for REST endpoint."""
+    from backend.modules.conversation.engine import get_client
+    from backend.modules.conversation.prompts import SYSTEM_PROMPT, build_recipe_context
+    from backend.config import settings
+
+    client = get_client()
+    system_content = SYSTEM_PROMPT
+    if recipe_data:
+        system_content += f"\n\n{build_recipe_context(recipe_data)}"
+    if language and language != "en":
+        system_content += f"\n\nIMPORTANT: The user prefers Hindi/Hinglish. Always respond in Hinglish (Hindi written in Roman script mixed with English cooking terms). Language code: {language}."
+
+    messages = [{"role": "system", "content": system_content}]
+    messages.extend(history)
+    messages.append({"role": "user", "content": user_message})
+
+    response = client.chat.completions(model=settings.SARVAM_LLM_MODEL, messages=messages)
+    return _clean_think_tags(response.choices[0].message.content)
 
 
 async def _load_recipe_data(db, recipe_id: int) -> dict | None:
@@ -78,6 +186,10 @@ async def voice_stream(websocket: WebSocket):
     try:
         while True:
             message = await websocket.receive()
+
+            # Handle disconnect
+            if message.get("type") == "websocket.disconnect":
+                break
 
             # Handle JSON text messages (session_start)
             if "text" in message:
@@ -238,7 +350,7 @@ def _sync_chat(
         system_content += f"\n\n{recipe_context}"
 
     if language and language != "en":
-        system_content += f"\n\nThe user prefers communicating in language code: {language}. Respond in that language when appropriate."
+        system_content += f"\n\nIMPORTANT: The user prefers Hindi/Hinglish. Always respond in Hinglish (Hindi written in Roman script mixed with English cooking terms). Language code: {language}."
 
     messages = [{"role": "system", "content": system_content}]
     messages.extend(conversation_history)
